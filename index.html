@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Mohit Solanki — Creative Video Editor, Photo Editor, and AI Content Creator. Specializing in visual storytelling, high-retention content, and prompt engineering." />
+  <meta name="keywords"
+    content="Video Editor, Photo Editor, AI Creator, Mohit Solanki, Prompt Engineering, Reels Editing, Short-form Video" />
+  <meta name="author" content="Mohit Solanki" />
+  <title>Mohit Solanki | Creative Video Editor & AI Creator</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap 5 Grid & Utilities -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Film Grain Overlay -->
+  <div class="film-grain"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- ── NAVBAR ──────────────────────────────────────────────────── -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#hero">
+        <span class="brand-symbol">🎬</span>
+        <span class="brand-text">MOHIT<span class="accent-dot">.</span>SOLANKI</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#highlights">Highlights</a></li>
+          <li class="nav-item"><a class="nav-link nav-cta" href="#contact">Hire Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO SECTION ────────────────────────────────────────────── -->
+  <header id="hero" class="hero-section">
+    <div class="hero-bg-glow"></div>
+    <div class="container position-relative z-2">
+      <div class="row align-items-center min-vh-100 py-5">
+        <div class="col-lg-7 text-start">
+          <div class="hero-badge reveal-fade-up">
+            <span class="pulse-indicator"></span> Now Accepting Projects
+          </div>
+
+          <h1 class="hero-title reveal-stagger">
+            <span class="word"><span class="letter">C</span><span class="letter">r</span><span
+                class="letter">e</span><span class="letter">a</span><span class="letter">t</span><span
+                class="letter">i</span><span class="letter">v</span><span class="letter">e</span></span>
+            <span class="word accent-gradient"><span class="letter">V</span><span class="letter">i</span><span
+                class="letter">d</span><span class="letter">e</span><span class="letter">o</span></span>
+            <span class="word"><span class="letter">E</span><span class="letter">d</span><span
+                class="letter">i</span><span class="letter">t</span><span class="letter">o</span><span
+                class="letter">r</span></span>
+            <span class="word-small">&amp; AI Content Creator</span>
+          </h1>
+
+          <p class="hero-lead reveal-fade-up">
+            I craft high-retention visual stories that capture attention, engage audiences, and drive organic social
+            growth. Mixing traditional film workflows with generative AI.
+          </p>
+
+          <div class="hero-ctas reveal-fade-up">
+            <a href="#projects" class="btn btn-primary-custom">
+              <span>View Work</span> <i class="fa-solid fa-arrow-right ms-2"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline-custom ms-3">
+              <span>Contact Me</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 text-center mt-5 mt-lg-0 reveal-fade-up">
+          <div class="hero-visual-card">
+            <div class="card-glass-header">
+              <span class="dot-win red"></span>
+              <span class="dot-win yellow"></span>
+              <span class="dot-win green"></span>
+              <span class="editor-file-title">sequence_01.mp4</span>
+            </div>
+            <div class="card-visual-display">
+              <div class="play-overlay">
+                <div class="play-btn-circle"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="editor-grid-pattern"></div>
+              <div class="editor-waveforms">
+                <span class="wavebar"></span>
+                <span class="wavebar"></span>
+                <span class="wavebar"></span>
+                <span class="wavebar"></span>
+                <span class="wavebar"></span>
+                <span class="wavebar"></span>
+                <span class="wavebar"></span>
+                <span class="wavebar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint reveal-fade-up">
+      <span>SCROLL TO EXPLORE</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ── ABOUT SECTION ───────────────────────────────────────────── -->
+  <section id="about" class="section-about section-alt">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 reveal-on-scroll" data-animation="slide-right">
+          <div class="about-visual-container">
+            <div class="about-avatar-placeholder">
+              <i class="fa-solid fa-user-ninja"></i>
+            </div>
+            <div class="float-tag tag-ai"><i class="fa-solid fa-wand-magic-sparkles"></i> Prompt Eng.</div>
+            <div class="float-tag tag-edit"><i class="fa-solid fa-scissors"></i> Storyteller</div>
+            <div class="float-tag tag-reach"><i class="fa-solid fa-chart-line"></i> 50K+ Reach</div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal-on-scroll" data-animation="slide-left">
+          <span class="section-label">01 / WHO I AM</span>
+          <h2 class="section-title">Visual Storytelling Meets Artificial Intelligence</h2>
+          <p class="about-bio mt-4">
+            I am a Creative Video Editor, Photo Editor, and AI Content Creator with hands-on experience producing
+            engaging short-form and long-form content.
+          </p>
+          <p class="about-bio">
+            Specializing in visual storytelling, efficient editing workflows, prompt engineering, and high-retention
+            content for rapid social media growth. I translate complex ideas into visually arresting narratives.
+          </p>
+
+          <!-- Stats Strip -->
+          <div class="row stats-row mt-5">
+            <div class="col-6 col-sm-4 mb-4">
+              <div class="stat-card">
+                <h3 class="stat-number" data-target="100">0</h3>
+                <span class="stat-label">AI Visuals Created</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 mb-4">
+              <div class="stat-card">
+                <h3 class="stat-number" data-target="50">0</h3>
+                <span class="stat-label">Organic Reach (K+)</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 mb-4">
+              <div class="stat-card">
+                <h3 class="stat-number" data-target="100" data-suffix="%">0</h3>
+                <span class="stat-label">Retention Focused</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS SECTION ────────────────────────────────────────── -->
+  <section id="projects" class="section-projects">
+    <div class="container">
+      <div class="text-center mb-5 reveal-on-scroll" data-animation="fade-up">
+        <span class="section-label">02 / FEATURED WORK</span>
+        <h2 class="section-title mx-auto">Creative Case Studies</h2>
+        <p class="section-subtitle">Real-world projects showcasing editing skills, retention strategies, and AI
+          workflows.</p>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <!-- Project 1 -->
+        <div class="col-lg-4 col-md-6 reveal-on-scroll" data-animation="fade-up" data-delay="0">
+          <div class="project-card">
+            <div class="project-icon-box">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">AI Video</span>
+                <span class="ptag">Prompt Engineering</span>
+              </div>
+              <h3 class="project-card-title">AI Cinematic Creation</h3>
+              <p class="project-desc">
+                Cinematic AI-generated videos utilizing advanced workflows, prompt engineering, smooth styling
+                transitions, cinematic color grading, and custom sound design.
+              </p>
+              <div class="project-links">
+                <a href="https://instagram.com/aiwithmohit_/" target="_blank" rel="noopener"
+                  class="project-action-link">
+                  <span>Explore on Instagram</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-4 col-md-6 reveal-on-scroll" data-animation="fade-up" data-delay="150">
+          <div class="project-card">
+            <div class="project-icon-box">
+              <i class="fa-solid fa-video"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">Reels</span>
+                <span class="ptag">Short-form</span>
+              </div>
+              <h3 class="project-card-title">Instagram Reel Editing</h3>
+              <p class="project-desc">
+                Paced, high-retention reel editing for client content. Generated 50K+ organic views using modern hooks,
+                subtitles, dynamic pacing, and trending audio.
+              </p>
+              <div class="project-links">
+                <a href="https://instagram.com/hasmukhyo_prashant/" target="_blank" rel="noopener"
+                  class="project-action-link">
+                  <span>View Client Work</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-12 reveal-on-scroll" data-animation="fade-up" data-delay="300">
+          <div class="project-card">
+            <div class="project-icon-box">
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">Education</span>
+                <span class="ptag">Generative AI</span>
+              </div>
+              <h3 class="project-card-title">LinkedIn AI Workflow</h3>
+              <p class="project-desc">
+                Generative AI tutorial creations and prompt design education. Helping professionals automate their
+                creative workflows through visual guides.
+              </p>
+              <div class="project-links">
+                <a href="https://linkedin.com/" target="_blank" rel="noopener" class="project-action-link">
+                  <span>Connect on LinkedIn</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS & TOOLS SECTION ───────────────────────────────────── -->
+  <section id="skills" class="section-skills section-alt">
+    <div class="container">
+      <div class="row">
+        <!-- Skills (Left) -->
+        <div class="col-lg-6 mb-5 mb-lg-0 reveal-on-scroll" data-animation="slide-right">
+          <span class="section-label">03 / CAPABILITIES</span>
+          <h2 class="section-title">Core Creative Skills</h2>
+          <p class="text-secondary mt-3 mb-5">
+            A balanced mix of classic post-production mastery and cutting-edge generative AI capabilities.
+          </p>
+
+          <div class="skills-wrapper">
+            <!-- Skill 1 -->
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Video Editing & Sequencing</span>
+                <span class="skill-val">75%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="75"></div>
+              </div>
+            </div>
+            <!-- Skill 2 -->
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">AI Content Creation & Workflows</span>
+                <span class="skill-val">50%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="50"></div>
+              </div>
+            </div>
+            <!-- Skill 3 -->
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Visual Storytelling & Scripting</span>
+                <span class="skill-val">40%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="40"></div>
+              </div>
+            </div>
+            <!-- Skill 4 -->
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Photo Editing & Color Correction</span>
+                <span class="skill-val">50%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="50"></div>
+              </div>
+            </div>
+            <!-- Skill 5 -->
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Prompt Engineering & AI Generation</span>
+                <span class="skill-val">90%</span>
+              </div>
+              <div class="skill-progress-bar">
+                <div class="skill-progress-fill" data-width="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools (Right) -->
+        <div class="col-lg-6 reveal-on-scroll" data-animation="slide-left">
+          <span class="section-label">04 / CREATIVE GEAR</span>
+          <h2 class="section-title">My Tech Stack</h2>
+          <p class="text-secondary mt-3 mb-5">
+            Industry-standard tools and generative AI frameworks I use daily to bring visual concepts to life.
+          </p>
+
+          <div class="row g-3 tools-grid">
+            <div class="col-6 col-sm-4">
+              <div class="tool-card-custom">
+                <i class="fa-solid fa-film tool-icon primary-color"></i>
+                <h4 class="tool-name">Capcut</h4>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card-custom">
+                <i class="fa-solid fa-wand-magic tool-icon secondary-color"></i>
+                <h4 class="tool-name">Alight Motion</h4>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card-custom">
+                <i class="fa-solid fa-icons tool-icon accent-color"></i>
+                <h4 class="tool-name">Picsart</h4>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card-custom">
+                <i class="fa-solid fa-robot tool-icon primary-color"></i>
+                <h4 class="tool-name">AI-Generation</h4>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card-custom">
+                <i class="fa-solid fa-brain tool-icon secondary-color"></i>
+                <h4 class="tool-name">Brainstorming</h4>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card-custom">
+                <i class="fa-solid fa-sliders tool-icon accent-color"></i>
+                <h4 class="tool-name">Lightroom</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── AREAS OF INTEREST ───────────────────────────────────────── -->
+  <section class="section-interests">
+    <div class="container">
+      <div class="text-center mb-5 reveal-on-scroll" data-animation="fade-up">
+        <span class="section-label">05 / HORIZONS</span>
+        <h2 class="section-title mx-auto">Areas of Focus &amp; Interest</h2>
+        <p class="section-subtitle">Specific sectors of the industry where I build content and lead creative direction.
+        </p>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-center gap-3 interest-badges-wrap mt-4 reveal-on-scroll"
+        data-animation="fade-up">
+        <span class="interest-badge"><i class="fa-solid fa-bolt me-2"></i> Short-form Video Editing</span>
+        <span class="interest-badge"><i class="fa-solid fa-glasses me-2"></i> AI Video Generation</span>
+        <span class="interest-badge"><i class="fa-solid fa-compass me-2"></i> Visual Storytelling</span>
+        <span class="interest-badge"><i class="fa-solid fa-bullhorn me-2"></i> Brand Content Creation</span>
+        <span class="interest-badge"><i class="fa-solid fa-hashtag me-2"></i> Social Media Marketing</span>
+        <span class="interest-badge"><i class="fa-solid fa-lightbulb me-2"></i> Creative Direction</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── KEY HIGHLIGHTS ──────────────────────────────────────────── -->
+  <section id="highlights" class="section-highlights section-alt">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 reveal-on-scroll" data-animation="slide-right">
+          <span class="section-label">06 / PERFORMANCE</span>
+          <h2 class="section-title">Key Career Highlights</h2>
+          <p class="text-secondary mt-3">
+            A reflection of prompt execution, workflow planning, and viewer-centric editing decisions.
+          </p>
+
+          <div class="checklist-wrapper mt-4">
+            <div class="checklist-item">
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              <p class="check-text">Optimized complex text prompts for rendering photorealistic, consistent AI images.
+              </p>
+            </div>
+            <div class="checklist-item">
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              <p class="check-text">Produced story-driven video scripts with flawless multi-clip transitions.</p>
+            </div>
+            <div class="checklist-item">
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              <p class="check-text">Formulated retention pacing techniques to maximize hook effectiveness on reels.</p>
+            </div>
+            <div class="checklist-item">
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              <p class="check-text">Successfully curated and rendered over 100+ fully-guided AI artistic visuals.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education (Right) -->
+        <div class="col-lg-6 reveal-on-scroll" data-animation="slide-left">
+          <div class="education-card-container">
+            <span class="section-label">07 / ACADEMIC FOUNDATION</span>
+            <h2 class="section-title mb-4">Brief Education</h2>
+
+            <div class="education-timeline">
+              <div class="edu-item">
+                <div class="edu-marker"></div>
+                <div class="edu-content">
+                  <span class="edu-year">2024 – 2027</span>
+                  <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
+                  <h4 class="edu-uni">Saurashtra University, Rajkot</h4>
+                  <p class="edu-desc text-secondary">
+                    Combining computational logic and computer science fundamentals with media arts and digital design
+                    concepts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT SECTION ─────────────────────────────────────────── -->
+  <section id="contact" class="section-contact">
+    <div class="container">
+      <div class="text-center mb-5 reveal-on-scroll" data-animation="fade-up">
+        <span class="section-label">08 / COLLABORATION</span>
+        <h2 class="section-title mx-auto">Let's Create Something Great</h2>
+        <p class="section-subtitle">Interested in boosting your retention rate or developing custom AI art? Shoot me a
+          message!</p>
+      </div>
+
+      <div class="row mt-5 justify-content-center">
+        <!-- Contact details -->
+        <div class="col-lg-5 mb-5 mb-lg-0 reveal-on-scroll" data-animation="slide-right">
+          <div class="contact-details-box">
+            <h3 class="contact-box-title">Direct Connection</h3>
+            <p class="text-secondary mb-4">Feel free to reach out via direct email or check my active social nodes
+              below.</p>
+
+            <div class="contact-methods">
+              <a href="mailto:mohitsolanki15093@gmail.com" class="contact-method-card">
+                <span class="cm-icon"><i class="fa-solid fa-envelope"></i></span>
+                <div class="cm-info">
+                  <span class="cm-label">EMAIL ADDRESS</span>
+                  <span class="cm-val">mohitsolanki15093@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://instagram.com/aiwithmohit_/" target="_blank" rel="noopener" class="contact-method-card">
+                <span class="cm-icon"><i class="fa-brands fa-instagram"></i></span>
+                <div class="cm-info">
+                  <span class="cm-label">INSTAGRAM</span>
+                  <span class="cm-val">@aiwithmohit_</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-method-card">
+                <span class="cm-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                <div class="cm-info">
+                  <span class="cm-label">LINKEDIN</span>
+                  <span class="cm-val">Mohit Solanki</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="col-lg-6 reveal-on-scroll" data-animation="slide-left">
+          <form id="portfolioContactForm" class="contact-form-custom">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="form-group-custom">
+                  <label for="formName" class="form-label-custom">YOUR NAME</label>
+                  <input type="text" id="formName" name="name" class="form-input-custom" placeholder="Mohit Solanki"
+                    required />
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="form-group-custom">
+                  <label for="formEmail" class="form-label-custom">EMAIL ADDRESS</label>
+                  <input type="email" id="formEmail" name="email" class="form-input-custom"
+                    placeholder="name@domain.com" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="form-group-custom">
+                <label for="formMessage" class="form-label-custom">MESSAGE DETAILS</label>
+                <textarea id="formMessage" name="message" rows="5" class="form-input-custom"
+                  placeholder="Describe your project, timeline, or workflow needs..." required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" id="formSubmitBtn" class="btn btn-primary-custom w-100">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-spinner d-none"><i class="fa-solid fa-circle-notch fa-spin"></i> Sending...</span>
+              <span class="btn-success-state d-none"><i class="fa-solid fa-check"></i> Message Sent!</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Mohit Solanki. All rights reserved. Designed for video-editing speed.</p>
+
+        <div class="footer-socials">
+          <a href="mailto:mohitsolanki15093@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://instagram.com/aiwithmohit_/" target="_blank" rel="noopener" aria-label="Instagram"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://instagram.com/hasmukhyo_prashant/" target="_blank" rel="noopener" aria-label="Client Work"><i
+              class="fa-solid fa-clapperboard"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTop" class="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="toast-notification"></div>
+
+  <!-- Bootstrap 5 Bundle JS (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
