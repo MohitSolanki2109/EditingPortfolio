@@ -218,7 +218,7 @@ function initContactForm() {
     e.preventDefault();
 
     // 1. Validate Access Key Configuration
-    if (WEB3FORMS_ACCESS_KEY === "20121088-1a90-456a-aadd-68e7110fa652" || !WEB3FORMS_ACCESS_KEY.trim()) {
+    if (WEB3FORMS_ACCESS_KEY === "YOUR_ACCESS_KEY_HERE" || !WEB3FORMS_ACCESS_KEY.trim()) {
       showToast("⚠️ Web3Forms Access Key is not configured yet! Please update script.js.");
       return;
     }
